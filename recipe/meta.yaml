@@ -1,4 +1,4 @@
-{% set version = '2.15.1' %}
+{% set version = "2.16.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/R.devices_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/R.devices/R.devices_{{ version }}.tar.gz
-  sha256: 3d5d99e415779e923183383448f2c4f6e8c1078cb749723dc7cb077bd0faf525
+  sha256: 7f5df06126154a4fb056e277e03eb43bef77419716800654a8b908b28ed292b8
 
 build:
   number: 0
