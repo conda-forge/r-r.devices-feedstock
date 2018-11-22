@@ -24,9 +24,6 @@ build:
 
 # Suggests: digest (>= 0.6.13), Cairo (>= 1.5-9), R.rsp
 requirements:
-  build:
-    - {{posix}}zip               # [win]
-
   host:
     - r-base
     - r-r.methodss3 >=1.7.1
