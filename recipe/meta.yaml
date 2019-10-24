@@ -1,4 +1,4 @@
-{% set version = '2.16.0' %}
+{% set version = "2.16.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,12 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.devices_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.devices/R.devices_{{ version }}.tar.gz
-  sha256: 7f5df06126154a4fb056e277e03eb43bef77419716800654a8b908b28ed292b8
+  sha256: adedb928e6e6d1951d512f13688aa8ad4558a8fbc5b3e58cc0901ff106b6f497
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
