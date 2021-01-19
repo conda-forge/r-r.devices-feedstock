@@ -1,4 +1,4 @@
-{% set version = '2.16.1' %}
+{% set version = "2.17.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.devices_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.devices/R.devices_{{ version }}.tar.gz
-  sha256: adedb928e6e6d1951d512f13688aa8ad4558a8fbc5b3e58cc0901ff106b6f497
+  sha256: c2d4b12949e0faab414c9f7575e39ee9dbf50ea12d858143df529f15ea365fb6
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -25,15 +25,15 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-r.methodss3 >=1.7.1
-    - r-r.oo >=1.21.0
-    - r-r.utils >=2.6.0
+    - r-r.methodss3 >=1.8.1
+    - r-r.oo >=1.24.0
+    - r-r.utils >=2.10.1
     - r-base64enc >=0.1_2
   run:
     - r-base
-    - r-r.methodss3 >=1.7.1
-    - r-r.oo >=1.21.0
-    - r-r.utils >=2.6.0
+    - r-r.methodss3 >=1.8.1
+    - r-r.oo >=1.24.0
+    - r-r.utils >=2.10.1
     - r-base64enc >=0.1_2
 
 test:
@@ -43,16 +43,12 @@ test:
 
 about:
   home: https://github.com/HenrikBengtsson/R.devices
-  license: LGPL-2.1
-  summary: Functions for creating plots and image files in a unified way regardless of output
-    format (EPS, PDF, PNG, SVG, TIFF, WMF, etc.). Default device options as well as
-    scales and aspect ratios are controlled in a uniform way across all device types.
-    Switching output format requires minimal changes in code. This package is ideal
-    for large-scale batch processing, because it will never leave open graphics devices
-    or incomplete image files behind, even on errors or user interrupts.
+  license: LGPL-2.1-or-later
+  summary: Functions for creating plots and image files in a unified way regardless of output format (EPS, PDF, PNG, SVG, TIFF, WMF, etc.). Default device options as well as scales and aspect ratios are controlled in a uniform way across all device types. Switching output format requires minimal changes in code. This package
+    is ideal for large-scale batch processing, because it will never leave open graphics devices or incomplete image files behind, even on errors or user interrupts.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
 extra:
   recipe-maintainers:

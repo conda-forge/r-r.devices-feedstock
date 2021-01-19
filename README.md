@@ -3,13 +3,11 @@ About r-r.devices
 
 Home: https://github.com/HenrikBengtsson/R.devices
 
-Package license: LGPL-2.1
+Package license: LGPL-2.1-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.devices-feedstock/blob/master/LICENSE.txt)
 
 Summary: Functions for creating plots and image files in a unified way regardless of output format (EPS, PDF, PNG, SVG, TIFF, WMF, etc.). Default device options as well as scales and aspect ratios are controlled in a uniform way across all device types. Switching output format requires minimal changes in code. This package is ideal for large-scale batch processing, because it will never leave open graphics devices or incomplete image files behind, even on errors or user interrupts.
-
-
 
 Current build status
 ====================
