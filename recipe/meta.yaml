@@ -25,15 +25,15 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-r.methodss3 >=1.7.1
-    - r-r.oo >=1.21.0
-    - r-r.utils >=2.6.0
+    - r-r.methodss3 >=1.8.1
+    - r-r.oo >=1.24.0
+    - r-r.utils >=2.10.1
     - r-base64enc >=0.1_2
   run:
     - r-base
-    - r-r.methodss3 >=1.7.1
-    - r-r.oo >=1.21.0
-    - r-r.utils >=2.6.0
+    - r-r.methodss3 >=1.8.1
+    - r-r.oo >=1.24.0
+    - r-r.utils >=2.10.1
     - r-base64enc >=0.1_2
 
 test:
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://github.com/HenrikBengtsson/R.devices
-  license: LGPL-2.1
+  license: LGPL-2.1-or-later
   summary: Functions for creating plots and image files in a unified way regardless of output format (EPS, PDF, PNG, SVG, TIFF, WMF, etc.). Default device options as well as scales and aspect ratios are controlled in a uniform way across all device types. Switching output format requires minimal changes in code. This package
     is ideal for large-scale batch processing, because it will never leave open graphics devices or incomplete image files behind, even on errors or user interrupts.
   license_family: LGPL
