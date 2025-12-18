@@ -1,4 +1,4 @@
-{% set version = "2.17.2" %}
+{% set version = "2.17.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.devices_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.devices/R.devices_{{ version }}.tar.gz
-  sha256: 403eeaf552dd696142096973dee3460dc52c19b73fd194841dd4638e2bdcec95
+  sha256: 4fa070d83781774e69c8ec5f4b3ffb3751f0d3f292271cdb47d76b0c012f3cf8
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
